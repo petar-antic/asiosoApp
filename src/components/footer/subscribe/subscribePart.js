@@ -11,7 +11,7 @@ const SubscribePart = () => {
         <h4>Subscribe to our{<br />} Newsletter!</h4>
         <p>Do you want to be part of something special?</p>
       </div>
-      <form className="needs-validation" noValidate>
+      <form className="needs-validation was-validated" noValidate>
         <div
           className={`input-group ${
             width < 768 ? 'input-group-sm' : 'input-group-lg'
