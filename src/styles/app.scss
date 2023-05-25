@@ -1,0 +1,67 @@
+@import './variables.scss';
+
+.rootLayout {
+  font-family: $Poppins !important;
+  .container-fluid {
+    padding: 50px 24px 50px 24px;
+    row-gap: 50px;
+    @media (min-width: 768px) {
+      padding: 100px 75px;
+      row-gap: 100px;
+    }
+    @media (min-width: 1024px) {
+      padding: 120px 250px;
+      row-gap: 90px;
+    }
+    @media (min-width: 1440px) {
+      padding: 150px 320px;
+      row-gap: 150px;
+    }
+    .news {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      @media (min-width: 768px) {
+        row-gap: 40px;
+      }
+      h6 {
+        font-size: 20px;
+        @media (min-width: 768px) {
+          font-size: 30px;
+        }
+        @media (min-width: 1024) {
+          font-size: 50px;
+        }
+      }
+      .imageContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        img {
+          border-radius: $borderRadius;
+          width: 100%;
+        }
+        .authorAndDate {
+          display: flex;
+          justify-content: space-between;
+          span {
+            font-size: 12px;
+            font-weight: bold;
+          }
+        }
+      }
+      span {
+        font-size: 10px;
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-size: 10px;
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

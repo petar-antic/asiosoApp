@@ -1,0 +1,97 @@
+@import '../../styles/variables.scss';
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    column-gap: 50px;
+  }
+  .technologiesAndCards {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 18px;
+      order: 1;
+    }
+    .technologiesHeading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      @media (min-width: 1024px) {
+        text-align: start;
+      }
+      span {
+        font-size: 15px;
+        color: $success;
+        font-family: $Satisfy;
+        @media (min-width: 1024px) {
+          font-size: 17px;
+        }
+      }
+      h2 {
+        font-weight: bold;
+        font-size: 25px;
+        @media (min-width: 1024px) {
+          font-size: 30px;
+        }
+      }
+      p {
+        font-size: 10px;
+        color: $primary;
+      }
+    }
+    .technologiesCards {
+      display: flex;
+      column-gap: 10px;
+      @media (min-width: 768px) {
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      .technologyCard {
+        width: 110;
+        height: 120px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border: none;
+        @media (min-width: 768px) {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 25px;
+          column-gap: 5px;
+        }
+        .cardHeading {
+          @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 3px;
+          }
+          .cardTitle {
+            font-size: 13px;
+          }
+          .cardText {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  img {
+    width: 250px;
+    height: 140px;
+    border-radius: $borderRadius;
+    border: 1px solid rgb(240, 240, 240);
+    @media (min-width: 768px) {
+      align-self: flex-start;
+    }
+    @media (min-width: 1024px) {
+      width: 350px;
+      height: 200px;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import '../../styles/variables.scss';
+
+.newsAndTrands {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  .newsAndTrandsHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    span {
+      font-size: 15px;
+      color: $success;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 25px;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  .categoryFilter {
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+      font-size: 14px;
+      margin: 0;
+      width: 100%;
+    }
+    select {
+      width: auto;
+      &:hover {
+        cursor: pointer;
+      }
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .newsList {
+    .productImg {
+      object-fit: cover;
+      height: 170px;
+
+      &:hover {
+        cursor: pointer;
+      }
+      @media (min-width: 1024px) {
+      }
+    }
+    .card {
+      height: 320px;
+      .cardBody {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .newsDate {
+          font-size: 12px;
+        }
+        h6 {
+          color: $dark;
+          font-size: 14px;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3; /* number of lines to show */
+          line-clamp: 3;
+          -webkit-box-orient: vertical;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .subtitle {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  .subscribePart {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #a3ce3d 0%, #637e24 100%);
+    padding: 35px;
+    color: $light;
+    @media (min-width: 768px) {
+      padding: 75px 75px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media (min-width: 1024px) {
+      padding: 75px 250px;
+    }
+    @media (min-width: 1440px) {
+      padding: 76px 320px;
+    }
+    .subscribeHeading {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      h4 {
+        font-weight: medium;
+        font-size: 16px;
+        margin: 0;
+        @media (min-width: 768px) {
+          font-size: 30px;
+          font-weight: bold;
+        }
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+    form {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      input {
+        font-size: 10px;
+        color: $dark;
+        @media (min-width: 1024px) {
+          width: 270px;
+        }
+      }
+      button {
+        background-color: $success;
+        color: $light;
+        font-size: 10px;
+      }
+    }
+  }
+  .contact {
+    background-color: #f9f7fb;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 35px;
+    @media (min-width: 768px) {
+      justify-content: center;
+      flex-direction: row;
+      column-gap: 20px;
+      padding: 75px;
+    }
+    @media (min-width: 1024px) {
+      padding: 75px 250px;
+      column-gap: 80px;
+      justify-content: space-between;
+    }
+    @media (min-width: 1024px) {
+      padding: 75px 320px;
+    }
+    .contactHeading {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 15px;
+        color: $success;
+        font-family: $Satisfy;
+        @media (min-width: 1024px) {
+          font-size: 17px;
+        }
+      }
+      h2 {
+        font-weight: bold;
+        font-size: 25px;
+        @media (min-width: 1024px) {
+          font-size: 30px;
+        }
+      }
+    }
+    .contactInfo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @media (min-width: 768px) {
+        justify-content: center;
+        column-gap: 20px;
+      }
+      @media (min-width: 1024px) {
+        column-gap: 57px;
+      }
+
+      .resorce {
+        display: flex;
+        row-gap: 5px;
+        flex-direction: column;
+        @media (min-width: 768px) {
+          font-size: 12px;
+        }
+        .resorceNav {
+          display: flex;
+          flex-direction: column;
+          row-gap: 5px;
+          span {
+            &:hover {
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .locationAndInfo {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        @media (min-width: 768px) {
+          flex-direction: row;
+          column-gap: 20px;
+        }
+        @media (min-width: 1024px) {
+          column-gap: 57px;
+        }
+        .textAndIcon {
+          display: flex;
+          column-gap: 5px;
+          span {
+            font-size: 12px;
+            &:hover {
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+          i {
+            font-size: 14px;
+          }
+        }
+        .telephone {
+          display: flex;
+          column-gap: 5px;
+          a {
+            font-size: 12px;
+            color: $dark;
+            text-decoration: none;
+          }
+          i {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

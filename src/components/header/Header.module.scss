@@ -1,0 +1,95 @@
+@import '../../styles/variables.scss';
+
+.header {
+  background: url('../../assets/images/backgroundExtraLarge.png');
+  background-size: cover;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.3s ease all;
+
+  @media (min-width: 600px) {
+    height: 100%;
+    padding: 0 75px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 100vh;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 320px;
+  }
+
+  .content {
+    color: $light;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    @media (min-width: 600px) {
+      padding-top: 50px;
+      padding-bottom: 130px;
+    }
+
+    @media (min-width: 1024px) {
+      padding-top: 100px;
+      padding-bottom: 120px;
+    }
+    @media (min-width: 1440px) {
+      padding-top: 180px;
+      padding-bottom: 270px;
+    }
+    .headings {
+      span {
+        font-family: $Satisfy;
+        font-size: 12px;
+        @media (min-width: 1024px) {
+          font-size: 20px;
+        }
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: bold;
+        @media (min-width: 1024px) {
+          font-size: 50px;
+        }
+      }
+      p {
+        font-size: 7px;
+        @media (min-width: 1024px) {
+          font-size: 14px;
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      @media (min-width: 1440px) {
+        column-gap: 74px;
+      }
+
+      .explore {
+        .button {
+          @media (min-width: 1440px) {
+            font-size: 12px;
+          }
+        }
+      }
+      .play {
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        @media (min-width: 768px) {
+          column-gap: 8px;
+        }
+        button {
+          border-radius: 50%;
+        }
+        span {
+          font-family: $Poppins;
+        }
+      }
+    }
+  }
+}
